@@ -6,8 +6,9 @@ public class Decomposer extends Living{
     }
 
     public void decompose(Living thing){
-        if (this.isAlive && thing.beenEaten){
-        System.out.println(this.name + "decomposes" + thing.getName());
+        if (this.isAlive && !thing.beenEaten){
+        System.out.println(this.name + " decomposes " + thing.getName());
+        environment.soil.increaseCarbonContent(thing.getCarbonComposition());
         }
     }
 
