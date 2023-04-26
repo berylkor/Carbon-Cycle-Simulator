@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 public class Environment {
@@ -40,6 +39,18 @@ public class Environment {
     }
 
     public void environmentReport(){
+        System.out.println("Atmosphere:\n"+ this.atmosphere);
+        System.out.println("Soil:\n"+ this.soil);
+        System.out.println("Ocean:\n"+ this.ocean);
+
+        System.out.println("Plants: ");
+        plants.forEach((plant)-> System.out.println(plant.getName()));
+
+        System.out.println("Animals: ");
+        plants.forEach((animal)-> System.out.println(animal.getName()));
+
+        System.out.println("Decomposers: ");
+        plants.forEach((decomposer)-> System.out.println(decomposer.getName()));
 
     }
 
