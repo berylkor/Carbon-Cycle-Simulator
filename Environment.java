@@ -47,10 +47,10 @@ public class Environment {
         plants.forEach((plant)-> System.out.println(plant.getName()));
 
         System.out.println("Animals: ");
-        plants.forEach((animal)-> System.out.println(animal.getName()));
+        animals.forEach((animal)-> System.out.println(animal.getName()));
 
         System.out.println("Decomposers: ");
-        plants.forEach((decomposer)-> System.out.println(decomposer.getName()));
+        decomposers.forEach((decomposer)-> System.out.println(decomposer.getName()));
 
     }
     
