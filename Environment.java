@@ -54,31 +54,24 @@ public class Environment {
 
     }
     
-    public void temperatureWarning()
-    {
-        if (!this.soil.checkTemperature())
-        {
+    public void temperatureWarning(){
+    
+        if (!this.soil.checkTemperature()){
             System.out.println("Warning: Current Temperature of soil is outside optimum temperature range")
-        }
-        elif (this.soil.checkTemperature())
-        {
+        }else{
             System.out.println("Current Temperature of soil is within optimum range")
         }
-        elif (!this.atmosphere.checkTemperature())
-        {
+        
+        if (!this.atmosphere.checkTemperature()){
             System.out.println("Warning: Current Temperature of atmosphere is outside optimum temperature range")
-        }
-        elif (this.atmosphere.checkTemperature())
-        {
+        }else{
             System.out.println("Current Temperature of atmosphere is within optimum range")
         }
-        elif (!this.ocean.checkTemperature())
-        {
+        
+        if (!this.ocean.checkTemperature()){
             System.out.println("Warning: Current Temperature of ocean is outside optimum temperature range")
-        }
-        elif (this.ocean.checkTemperature())
-        {
-            System.out.println("Current Temperature of ocean is within optimum range")
+        }else{
+            System.out.println("Current Temperature of ocean is within optimum range");
         }
     }
 
