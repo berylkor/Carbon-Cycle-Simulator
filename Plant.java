@@ -14,6 +14,7 @@ public class Plant extends Living{
     public void photosynthesize(){
         if (this.isAlive){
         System.out.println(this.name + " is photosynthesizing.");
+        environment.atmosphere.decreaseCarbonContent(this.carbonAbsorbed);
         }else{
             System.out.print(this.name + " is dead and cannot photosynthesize.");
         }
@@ -24,3 +25,4 @@ public class Plant extends Living{
         environment.removePlant(this);
     }
 }
+
