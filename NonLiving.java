@@ -60,6 +60,7 @@ public class NonLiving extends Component
     }
 
     public toString(){
-
+        return "Temperature in degrees Celsius: " + this.currentTemperature
+        + "\nCarbon Content: " + this.carbonContent;
     }
 }
