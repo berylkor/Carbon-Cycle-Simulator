@@ -63,4 +63,22 @@ public class NonLiving extends Component
         return "Temperature in degrees Celsius: " + this.currentTemperature
         + "\nCarbon Content: " + this.carbonContent;
     }
+    
+    public boolean checkCurrentTemperature()
+    {
+        if (this.currentTemperature < LOWER_OPTIMUM_TEMPERTURE || this.currentTemperature > UPPER_OPTIMUM_TEMPERATURE)
+        {
+            return false;
+        }
+        return true;
+    }
+    
+    public boolean checkCarbonContent()
+    {
+        if (this.carbonContent< OPTIMUM_CONTENT|| this.carbonContent >OPTIMUM_CONTENT)
+        {
+            return false;
+        }
+        return true;
+    }
 }
