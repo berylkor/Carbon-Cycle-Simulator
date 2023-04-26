@@ -18,7 +18,8 @@ public class Animal extends Living{
     public void feed(Living prey){
         if (this.isAlive && prey.isAlive){
 
-            System.out.println(this.name + "  is feeding " + prey.getName());
+            System.out.println(this.name + "  is feeding on " + prey.getName());
+            this.carbonComposition += prey.getCarbonComposition();
         
         } else if (!this.isAlive){
 
@@ -34,6 +35,8 @@ public class Animal extends Living{
 
     public void egest(){
         System.out.println(this.name + " is egested.");
+        environment.soil.increaseCarbonContent(this.egestedCarbon);
+        this.carbonComposition -= this.egestedCarbon;
     }
 
     public void die(){
