@@ -7,6 +7,7 @@ public class Human extends Animal{
     public void burn(Living thing){
         if (this.isAlive){
             System.out.println(this.name + " is burning " + thing.getName());
+            environment.atmosphere.increaseCarbonContent(thing.carbonComposition);
         } else{
             System.out.println(this.name + " is dead and cannot burn");
         }
