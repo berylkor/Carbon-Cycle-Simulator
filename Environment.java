@@ -53,5 +53,33 @@ public class Environment {
         plants.forEach((decomposer)-> System.out.println(decomposer.getName()));
 
     }
+    
+    public void temperatureWarning()
+    {
+        if (!this.soil.checkTemperature())
+        {
+            System.out.println("Warning: Current Temperature of soil is outside optimum temperature range")
+        }
+        elif (this.soil.checkTemperature())
+        {
+            System.out.println("Current Temperature of soil is within optimum range")
+        }
+        elif (!this.atmosphere.checkTemperature())
+        {
+            System.out.println("Warning: Current Temperature of atmosphere is outside optimum temperature range")
+        }
+        elif (this.atmosphere.checkTemperature())
+        {
+            System.out.println("Current Temperature of atmosphere is within optimum range")
+        }
+        elif (!this.ocean.checkTemperature())
+        {
+            System.out.println("Warning: Current Temperature of ocean is outside optimum temperature range")
+        }
+        elif (this.ocean.checkTemperature())
+        {
+            System.out.println("Current Temperature of ocean is within optimum range")
+        }
+    }
 
 }
