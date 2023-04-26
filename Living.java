@@ -31,6 +31,7 @@ public abstract class Living extends Component{
     public void respire(){
         if (this.isAlive){
             System.out.println(this.name + " is respiring.");
+            environment.atmosphere.increaseCarbonContent(this.expiredCarbon);
         } else {
             System.out.println(this.name + " is dead and cannot respire.");
         }
