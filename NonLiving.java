@@ -18,7 +18,23 @@ public class NonLiving extends Component
         this.carbonContent = carbonContent;
         this.currentTemperature = currentTemperature;
 
-        // Set optimum temperature and carbon content based on the name of nonLiving component
+        switch (name){
+            case "soil":
+            OPTIMUM_CARBON_CONTENT = 500;
+            LOWER_OPTIMUM_TEMPERATURE = 20;
+            UPPER_OPTIMUM_TEMPERATURE = 30;
+            break;
+
+            case "ocean":
+            OPTIMUM_CARBON_CONTENT = 1000;
+            LOWER_OPTIMUM_TEMPERATURE = 5;
+            UPPER_OPTIMUM_TEMPERATURE = 25;
+            break;
+
+            case "atmosphere":
+            OPTIMUM_CARBON_CONTENT = 1000;
+            LOWER_OPTIMUM_TEMPERATURE = -51;
+            UPPER_OPTIMUM_TEMPERATURE = 17;
     }
 
     public void setCarbonContent(double carbonContent)
