@@ -16,7 +16,7 @@ public class Environment {
     public Environment(String name){
         this.name = name;    
     }
-    /*
+    /**
     * This method add an object of the plant class
     * it returns a boolean value after 
     */
@@ -24,7 +24,7 @@ public class Environment {
         return plants.add(plant);
     }
     
-    /*
+    /**
     * This method add an object of the animal class
     * it returns a boolean value after 
     */
@@ -32,7 +32,7 @@ public class Environment {
         return animals.add(animal);
     }
     
-    /*
+    /**
     * This method add an object of the decomposer class
     * it returns a boolean value after 
     */
@@ -40,7 +40,7 @@ public class Environment {
         return decomposers.add(decomposer);
     }
     
-    /*
+    /**
     * This method removes an object of the plant class
     * it returns a boolean value after 
     */
@@ -48,7 +48,7 @@ public class Environment {
         return plants.remove(plant);
     }
     
-    /*
+    /**
     * This method removes an object of the animal class
     * it returns a boolean value after 
     */
@@ -84,7 +84,7 @@ public class Environment {
         decomposers.forEach((decomposer)-> System.out.println(decomposer.getName()));
     }
     
-    /*
+    /**
     * This method uses the checkTemperature method from the Non living class
     * It displays a warning message if the temperature is not within optimum
     * it does not return a value 
@@ -109,7 +109,7 @@ public class Environment {
             System.out.println("Current Temperature of ocean is within optimum range");
         }
     }
-    /*
+    /**
     * This method uses the checkCarbonContent method from the Non living class
     * It displays a warning message if the carbon content is not within optimum
     * it does not return a value 
