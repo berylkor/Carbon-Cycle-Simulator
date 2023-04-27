@@ -1,4 +1,9 @@
 public abstract class Component{
+    /** 
+    * This class models a compenent that all classes inherit from
+    * @author Kwame Brako Asante, Beryl Awurama Ayaw Koram, Valerie Maame Abena Ackon
+    */
+    
     /**
      * This enumeration species the allowed values for type
      * A sink is a component that absorbs carbon into the atmosphere
@@ -36,7 +41,6 @@ public abstract class Component{
 
     /**
      * Method returns the name of the component
-     * 
      * @return name 
      */
     public String getName(){
