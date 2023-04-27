@@ -56,13 +56,13 @@ public class NonLiving extends Component
     //increments the carbon content of the non-living component
     public void increaseCarbonContent(double increase)
     {
-        this.carbonContent += carbonContent; 
+        this.carbonContent += increase; 
     }
 
     //decrements the carbon content of this non-living component
-    public void decreaseCarbonContent(double increase)
+    public void decreaseCarbonContent(double decrease)
     {
-        this.carbonContent -= carbonContent; 
+        this.carbonContent -= decrease; 
     }
 
     /**
