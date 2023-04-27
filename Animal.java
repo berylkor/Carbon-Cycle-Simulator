@@ -1,4 +1,7 @@
-/* A class that models an animal and inherits from the Living class */
+/** 
+* A class that models an animal and inherits from the Living class 
+* @author Kwame Brako Asante, Beryl Awurama Ayaw Koram, Valerie Maame Abena Ackon
+*/
 public class Animal extends Living{
     double egestedCarbon;// the amount of carbon released into the soil during egestion.
 
