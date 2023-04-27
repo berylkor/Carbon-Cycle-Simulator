@@ -50,9 +50,7 @@ public class Main{
         while(ourEnvironment.atmosphere.checkCarbonContent()){
             adam.burn(mango);
         }
-
-       
-
+           ourEnvironment.environmentReport();
 
         
     }
