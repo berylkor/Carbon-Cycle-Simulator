@@ -1,4 +1,7 @@
-/* This class models a plant */
+/** 
+* This class models a plant 
+* @author Kwame Brako Asante, Beryl Awurama Ayaw Koram, Valerie Maame Abena Ackon
+*/
 public class Plant extends Living{
     private final double carbonAbsorbed; // amount of carbon absorbed each time the plant photosynthesizes
 
