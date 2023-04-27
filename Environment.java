@@ -74,5 +74,26 @@ public class Environment {
             System.out.println("Current Temperature of ocean is within optimum range");
         }
     }
+    
+    public void carbonContentWarning(){
+    
+        if (!this.soil.checkCarbonContent()){
+            System.out.println("Warning: Current carbon content of soil is outside the optimum carbon content range")
+        }else{
+            System.out.println("Current carbon content of soil is within the optimum carbon content range")
+        }
+        
+        if (!this.atmosphere.checkCarbonContent()){
+            System.out.println("Warning: Current carbon content of atmosphere is outside the optimum carbon content range")
+        }else{
+            System.out.println("Current Current carbon content of atmosphere is within the optimum carbon content range")
+        }
+        
+        if (!this.ocean.checkCarbonContent()){
+            System.out.println("Warning: Current carbon content of ocean is outside the optimum carbon content range")
+        }else{
+            System.out.println("Current carbon content of ocean is within the optimum carbon content range");
+        }
+    }
 
 }
