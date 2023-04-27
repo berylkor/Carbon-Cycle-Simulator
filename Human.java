@@ -1,9 +1,14 @@
 public class Human extends Animal{
+     /** 
+    * This class models an animal 
+    * @author Kwame Brako Asante, Beryl Awurama Ayaw Koram, Valerie Maame Abena Ackon
+    */
     
     // constructor that sets the name, carbon compostion, expired carbon and egested carbon
     public Human(String name,  double carbonComposition, double expiredCarbon, double egestedCarbon){
         super(name, carbonComposition, expiredCarbon, egestedCarbon);
     }
+    
     /**
     * This method takes an object of the living class
     * checks if Human object calling it is alive and prints out the thing the 
@@ -19,6 +24,7 @@ public class Human extends Animal{
             System.out.println(this.name + " is dead and cannot burn");
         }
     }
+    
     /**
     * This method takes a method of the living class and
     * checks if the human class that is calling it is alive.
