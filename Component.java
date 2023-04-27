@@ -5,7 +5,7 @@ public abstract class Component{
     */
     
     /**
-     * This enumeration species the allowed values for type
+     * This enumeration specifies the allowed values for type
      * A sink is a component that absorbs carbon into the atmosphere
      * A sink is a component that releases carbon into the atmosphere
      * A source is a component that  carbon instead.
