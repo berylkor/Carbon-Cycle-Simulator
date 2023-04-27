@@ -1,4 +1,7 @@
-/* This models a non_living component of the environment */
+ /** 
+  * This models a non_living component of the environment 
+  * @author Kwame Brako Asante, Beryl Awurama Ayaw Koram, Valerie Maame Abena Ackon
+  */
 public class NonLiving extends Component
 {
     private double OPTIMUM_CARBON_CONTENT;
@@ -25,7 +28,9 @@ public class NonLiving extends Component
         this.carbonContent = carbonContent;
         this.currentTemperature = currentTemperature;
 
-        /* This switch statement sets the values of the optimum carbon content, lower optimum temperature and upper optimum temperature 
+        /* 
+         * switch statement sets the values of the optimum carbon content, 
+         * lower optimum temperature and upper optimum temperature 
          * depending on the name of the non-living component
          */
         switch (name){
@@ -62,7 +67,6 @@ public class NonLiving extends Component
 
     /**
      * gets the carbon content
-     * 
      * @return carbonContent
      */
     public double getCarbonContent()
