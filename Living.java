@@ -1,4 +1,9 @@
 public abstract class Living extends Component{
+     /** 
+    * This class models an living thing and extends the component class
+    * @author Kwame Brako Asante, Beryl Awurama Ayaw Koram, Valerie Maame Abena Ackon
+    */
+    
     // instance variables
     protected boolean isAlive = true;
     protected boolean beenEaten = false;
