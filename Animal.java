@@ -15,7 +15,7 @@ public class Animal extends Living{
     
     /**
      * This method gets the egestedCarbon
-     * @return egested Carbon
+     * @return {@code egested Carbon}
      */
     public double getEgestedCarbon(){
         return this.egestedCarbon;
