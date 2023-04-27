@@ -1,13 +1,23 @@
 public abstract class Component{
+    /**
+     * This enumeration species the allowed values for type
+     * A sink is a component that absorbs carbon into the atmosphere
+     * A sink is a component that releases carbon into the atmosphere
+     * A source is a component that  carbon instead.
+     */
     enum Types {SINK, SOURCE, BOTH}
     protected Types type;
-    protected String name;
-    protected static Environment environment = new Environment("forest");
+    protected String name;// the name of the component
+    protected static Environment environment = new Environment("forest");// the environment within which the component is found
 
     public Component(String componentName, String componentType){
         this.name = componentName;
-        String typeLowerCase = componentType.toLowerCase();
+        String typeLowerCase = componentType.toLowerCase();//converts the argument passed into lower case
         
+        /**
+         * The switch statement sets the type value depending on the 
+         * argument passed as the componentType
+         */
         switch (typeLowerCase) {
             case "sink":
             this.type = Types.SINK;
@@ -24,11 +34,14 @@ public abstract class Component{
 
     }
 
+    /**
+     * Method returns the name of the component
+     * 
+     * @return name 
+     */
     public String getName(){
     return this.name;
     }
 
-    public void setName(String name){
-        this.name = name;
-    }
+
 }
