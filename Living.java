@@ -12,7 +12,10 @@ public abstract class Living extends Component{
         this.expiredCarbon = expiredCarbon;
     }
     
-    // accessor method for getting carbon compostion
+    /** 
+    * accessor method for getting carbon compostion
+    * @return carbonCompostion
+    */
     public double getCarbonComposition(){
         return this.carbonComposition;
     }
@@ -22,7 +25,10 @@ public abstract class Living extends Component{
         this.carbonComposition = carbonComposition;
     }
     
-    // accessor method for getting expired carbon 
+    /** 
+    * accessor method for getting expired carbon 
+    * @return expiredCarbon
+    */
     public double getExpiredCarbon(){
         return this.expiredCarbon;
     }
@@ -31,6 +37,7 @@ public abstract class Living extends Component{
     public void setExpiredCarbon(double expiredCarbon){
         this.expiredCarbon = expiredCarbon;
     }
+    
     /**
     * This method checcks if an object is alive then
     * prints a message to show the object is respiring
@@ -45,6 +52,7 @@ public abstract class Living extends Component{
             System.out.println(this.name + " is dead and cannot respire.");
         }
     }
+    
     /**
     * This method changes the value of the isAlive variable to false
     * and prints a method showing the object calling it is dead
