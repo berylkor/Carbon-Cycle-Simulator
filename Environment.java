@@ -71,19 +71,23 @@ public class Environment {
     * This method prints the state of the atmosphere, soil and ocean
     * It then displays the names of all plants, animals and decomposers in the ArrayList
     */
-    public void environmentReport(){
-        System.out.println("Atmosphere:\n"+ this.atmosphere);
+       public void environmentReport(){
+        System.out.println("\n" + this.name.toUpperCase() + " ENVIRONMENT REPORT.");
+        System.out.println("\nAtmosphere:\n"+ this.atmosphere + "\n");
         System.out.println("Soil:\n"+ this.soil);
         System.out.println("Ocean:\n"+ this.ocean);
 
         System.out.println("Plants: ");
-        plants.forEach((plant)-> System.out.println(plant.getName()));
+        plants.forEach((plant)-> System.out.println("\t" + plant.getName()));
 
         System.out.println("Animals: ");
-        animals.forEach((animal)-> System.out.println(animal.getName()));
+        animals.forEach((animal)-> System.out.println("\t" + animal.getName()));
 
         System.out.println("Decomposers: ");
-        decomposers.forEach((decomposer)-> System.out.println(decomposer.getName()));
+        decomposers.forEach((decomposer)-> System.out.println("\t" + decomposer.getName()));
+        this.temperatureWarning();
+        this.carbonContentWarning();
+        System.out.println();
     }
     
     /**
