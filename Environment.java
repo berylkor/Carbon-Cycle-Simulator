@@ -1,5 +1,8 @@
 import java.util.*;
-
+    /** 
+    * This class models an environment 
+    * @author Kwame Brako Asante, Beryl Awurama Ayaw Koram, Valerie Maame Abena Ackon
+    */
 
 public class Environment {
     
@@ -18,7 +21,7 @@ public class Environment {
     }
     /**
     * This method add an object of the plant class
-    * it returns a boolean value after 
+    * @return boolean 
     */
     public boolean addPlant(Plant plant){
         return plants.add(plant);
@@ -26,7 +29,7 @@ public class Environment {
     
     /**
     * This method add an object of the animal class
-    * it returns a boolean value after 
+    * @return boolean
     */
     public boolean addAnimal (Animal animal){
         return animals.add(animal);
@@ -34,7 +37,7 @@ public class Environment {
     
     /**
     * This method add an object of the decomposer class
-    * it returns a boolean value after 
+    * @return boolean 
     */
     public boolean addDecomposer(Decomposer decomposer){
         return decomposers.add(decomposer);
@@ -42,7 +45,7 @@ public class Environment {
     
     /**
     * This method removes an object of the plant class
-    * it returns a boolean value after 
+    * @return boolean
     */
     public boolean removePlant(Plant plant){
         return plants.remove(plant);
@@ -50,7 +53,7 @@ public class Environment {
     
     /**
     * This method removes an object of the animal class
-    * it returns a boolean value after 
+    * @return boolean
     */
     public boolean removeAnimal(Animal animal){
         return animals.remove(animal);
@@ -58,7 +61,7 @@ public class Environment {
     
     /*
     * This method removes an object of the decomposer class
-    * it returns a boolean value after 
+    * @return boolean 
     */
     public boolean removeDecomposer(Decomposer decomposer){
         return decomposers.remove(decomposer);
@@ -67,7 +70,6 @@ public class Environment {
     /*
     * This method prints the state of the atmosphere, soil and ocean
     * It then displays the names of all plants, animals and decomposers in the ArrayList
-    * it does not return a value 
     */
     public void environmentReport(){
         System.out.println("Atmosphere:\n"+ this.atmosphere);
@@ -87,7 +89,6 @@ public class Environment {
     /**
     * This method uses the checkTemperature method from the Non living class
     * It displays a warning message if the temperature is not within optimum
-    * it does not return a value 
     */
     public void temperatureWarning(){
         // checks for the temperature of the soil
@@ -112,7 +113,6 @@ public class Environment {
     /**
     * This method uses the checkCarbonContent method from the Non living class
     * It displays a warning message if the carbon content is not within optimum
-    * it does not return a value 
     */
     public void carbonContentWarning(){
         // checks for the carbon content of the soil
